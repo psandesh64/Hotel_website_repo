@@ -1,0 +1,231 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/about-us.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/our-menu.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/our-services.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/allergy-advice.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/contact-us.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Proxima Nova:wght@300;400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Chela One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Allura:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Baloo Bhai:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    
+    <nav class="nav-bar5 hnav" id="navbar">
+      <a class="logo28" href="{% url 'index' %}">
+        <div class="boldlocation-parent">
+          <img
+            class="icbaseline-facebook-icon"
+            alt=""
+            src="{% static 'images/momo-1.svg' %}"
+          />
+
+          <b class="the">momos</b>
+        </div>
+      </a>
+      <div class="links17 vclass">
+        <a class="item-link20" href="{% url 'about-us' %}">
+          <div class="about-us29">About Us</div>
+          <img
+            class="boldarrow-down-icon22"
+            alt=""
+            src=""
+          />
+        </a>
+        <a class="item-link20" href="{% url 'our-menu' %}">
+          <div class="about-us29">Our Menu</div>
+          <img
+            class="boldarrow-down-icon22"
+            alt=""
+            src=""
+          />
+        </a>
+        <a class="item-link20" href="{% url 'our-services' %}">
+          <div class="about-us29">Our Services</div>
+          <img
+            class="boldarrow-down-icon22"
+            alt=""
+            src=""
+          />
+        </a>
+        <a class="item-link20" href="{% url 'allergy-advice' %}">
+          <div class="about-us29">Allergy Advice</div>
+          <img
+            class="boldarrow-down-icon22"
+            alt=""
+            src=""
+          />
+        </a>
+      </div>
+      <div class="buttons6 vclass">
+        <div class="button14">
+          <a class="social-icon51">
+            <img class="path16-icon10" alt="" src="{% static 'images/pathfacebook.svg' %}" />
+          </a>
+          <a class="social-icon51">
+            <img class="vector-icon17" alt="" src="{% static 'images/pathtiktok.svg' %}" />
+          </a>
+          <a class="social-icon51">
+            <img
+              class="instagram-svg-icon10" alt="" src="{% static 'images/pathinstagram.svg' %}" />
+          </a>
+        </div>
+        
+        <a style="text-decoration: none;" href="{% url 'contact-us' %}"><button type="button" class="button16" href="{% url 'contact-us' %}">
+          <div class="large-button12">Contact Us</div>
+        </button></a>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+
+    {% block content %}
+    
+    {% endblock %}
+
+
+    <div class="footer10">
+      <div class="footer11">
+        <div class="footer-section5">
+          <div class="logo25">
+            <div class="logo26">
+              <div class="boldlocation-parent">
+                <img
+                  class="momo-1-icon10"
+                  alt=""
+                  src="{% static 'images/momo-1.svg' %}"
+                />
+
+                <b class="the">momos</b>
+              </div>
+            </div>
+            <p class="lorem-ipsum-dolor12">
+              Lorem ipsum dolor sit amet consectetur. Elit sem tempor egestas
+              molestie. Volutpat quis egestas porttitor turpis sit in. Lorem
+              nunc nullam morbi urna amet suspendisse nullam ac vivamus.
+            </p>
+          </div>
+          <div class="links-part5">
+            <div class="link50">
+              <b class="the">momos</b>
+              <div class="links15">
+                <div class="link51">
+                  <div class="the">About Us</div>
+                </div>
+                <div class="link51">
+                  <div class="the">Our Menu</div>
+                </div>
+                <div class="link51">
+                  <div class="the">Our Services</div>
+                </div>
+                <div class="link51">
+                  <div class="the">Contact Us</div>
+                </div>
+              </div>
+            </div>
+            <div class="link50">
+              <b class="the">Legals</b>
+              <div class="links15">
+                <div class="link51">
+                  <div class="the">Terms & Conditions</div>
+                </div>
+                <div class="link51">
+                  <div class="the">Privacy Policy</div>
+                </div>
+                <div class="link51">
+                  <div class="the">Support</div>
+                </div>
+              </div>
+            </div>
+            <div class="link50">
+              <b class="the">Follow Us</b>
+              <div class="social-icon-parent8">
+                <img
+                  class="social-icon45"
+                  alt=""
+                  src="{% static 'images/facebookicon.svg' %}"
+                />
+
+                <img
+                  class="social-icon45"
+                  alt=""
+                  src="{% static 'images/linkedinicon.svg' %}"
+                />
+
+                <img
+                  class="social-icon45"
+                  alt=""
+                  src="{% static 'images/twittericon.svg' %}"
+                />
+              </div>
+              <div class="social-icon-parent8">
+                <img
+                  class="social-icon45"
+                  alt=""
+                  src="{% static 'images/youtubeicon.svg' %}"
+                />
+
+                <img
+                  class="social-icon45"
+                  alt=""
+                  src="{% static 'images/instagramicon.svg' %}"
+                />
+
+                <img
+                  class="social-icon45"
+                  alt=""
+                  src="{% static 'images/tiktokicon.svg' %}"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-div"></div>
+        <span class="copyright-2023-everest5"
+          >Copyright ©️2023 Everest Momo Pvt Ltd. All Rights Reserved.</span
+        >
+      </div>
+    </div>
+  </body>
+</html>

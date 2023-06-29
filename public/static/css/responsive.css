@@ -1,0 +1,378 @@
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5vw;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+@media only screen and (max-width:1320px){
+    .burger{
+        display: block;
+    }
+    .nav-bar5{
+        flex-direction: column;
+        height: 400px;
+        padding: 16px 26px;
+    }
+    .hnav{
+        height: 80px;
+    }
+    .vclass{
+        opacity: 0;
+    }
+    .content19{
+        margin-left: 0px;
+        flex: 1;
+        transform: scale(1);
+    }
+    .links17{
+        flex-direction: column;
+    }
+    .logo28{
+        justify-content: center;
+        width:100%
+    }
+    .buttons6{
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .mybox{
+        margin-top: 250px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .ttp{
+        margin-top: -80px;
+    }
+    .mybox_child{
+        width: 100%;
+        height: calc(0.7*100vw);
+    }
+    .home-child{
+        right: -20vw;
+        width: 80vw;
+        height: calc(80vw);  
+    }
+    .home-item{
+        margin-top: 50px;
+        width: 80%;
+        right: 50px;
+
+    }
+    .frame-parent8 {
+        flex-direction: column;
+    }
+    .about-us27{
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+    }
+    .menu-parent{
+        width: 300px;
+        
+    }
+    .arrow-group{
+        gap: 0;
+        flex: 1;
+        transform: scale(0.75);
+    }
+    .about-us28{
+        width: 100%;
+    }
+    .about-us-child{
+        width: 40vw;
+        height: calc(1.3*40vw);
+    }
+    .heading-container {
+        padding: 64px 0px;
+      }
+    .testimonials {
+    padding: 64px 0px;
+    flex-direction: column;
+    }
+    .sliderdiv{
+        height: 1050px;
+    }
+    #button_14{
+        left: 200px;
+        bottom:590px;
+    }
+    .text-field-group,
+    .text-field8 {
+        flex-direction: column;
+    }
+    .get-in-touch3{
+        padding: 40px 0;
+    }
+    .footer11 {
+        padding: 56px 0px;
+    }
+}
+
+@media only screen and (max-width:1320px){
+
+    .about-us-parent{
+        margin-top: -10px;
+        justify-content: center;
+        flex: 1;
+        transform: scale(0.6);
+        height: 900px;
+    }
+    .about-us18{
+        margin-top: 250px;
+    }
+    .about1{
+        padding: 20px;
+        width: 100%;
+    }
+    .video1{
+        width: 100%;
+    }
+    .video-container{
+        
+        transform: scale(0.6);
+    }
+    .about3{
+        flex-direction: column;
+    }
+    .pngwing-2-icon4 {
+        bottom: -41px;
+        left: calc(50% - 350px);
+    }
+    #ab3{
+        flex-direction: column-reverse;
+    }
+    .pngegg-1-icon2 {
+        top: calc(50% + 320px);
+        left: calc( 375px);
+    }
+    .vbss64ar4ftv20rdkigdgqdt6f-1-icon {
+        left: calc(50% - 350px);
+    }
+    .myhello{
+        flex-direction: column;
+    }
+    .sliderdiv1{
+        height: 1300px;
+    }
+    .quote1{
+        width: 70%;
+    }
+    .quote-inner{
+        align-items: center;
+        width: 100%;
+        object-fit: scale-down;
+    }
+    .button8 {
+        bottom:1170px;
+        left:250px;
+    }
+    .chef{
+        width: 744px;
+    }
+}
+
+@media only screen and (max-width:460px){
+    .video-container{
+        transform: scale(0.4);
+    }
+    .about2{
+        margin: -130vw;
+        transform: scale(0.55);
+    }
+    .quote-icon{
+        height: 24px;
+        width: 24px;
+    }
+    .quote2{
+        font-size: 16px;
+    }
+    .quote1{
+        margin-right: 5vw;
+        margin-left: 8vw;
+        width: 90%;
+        margin-bottom: 0vw;
+        gap: 24px;
+    }
+    .sliderdiv1{
+        height: 900px;
+    }
+    .button8 {
+        top: 48px;
+        left: 200px;
+        height: 30px;
+        z-index: 2;
+    }
+    .quote-inner{
+        width: 375px;
+        height: 375px;
+        object-fit: cover;
+    }
+    .out-team{
+        margin-top: -40vw;
+        padding: 80px 24px;
+    }
+    .chef{
+        transform: scale(0.75);
+        width: 360px;
+        margin: -60px -60px;
+    }
+}
+/* ----------------------------xx our menu xx------------------------------------------- */
+@media only screen and (max-width:1320px){
+    .heading2{
+        margin-top: 300px;
+        transform: scale(0.75);
+        padding: 4vw ;
+        margin-bottom: -120px;
+    }
+    .heading3{
+        width: 100%;
+        text-align: center;
+    }
+    .momo-menu2{
+        padding: 40px 60px;
+        align-items: center;
+    }
+    .food-item{
+        transform: scale(0.85);
+        margin-top: -150px;
+        margin-bottom: -100px;
+        width: 120%;
+    }
+    .item{
+        align-items: center;
+    }
+}
+@media only screen and (max-width:460px){
+    .momo-menu2{
+        padding: 40px 5px;
+    }
+}
+/* ----------------------------xx our services xx------------------------------------------- */
+@media only screen and (max-width:1320px){
+    .our-services1{
+        margin-top: 350px;
+        flex-direction: column;
+    }
+    .content14{
+        padding: 0 0 50px;
+    }
+    .about-parent{
+        padding: 80px;
+    }
+    .about{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #abt1{
+        flex-wrap: wrap-reverse;
+    }
+    .section{
+        width: 100%;
+        padding: 80px;
+    }
+}
+@media only screen and (max-width:460px){
+    .our-services1{
+        transform: scale(0.5);
+        margin-top: 150px;
+        margin-bottom: -200px;
+    }
+    .video1{
+        height: 460px;
+    }
+    .about-parent{
+        margin-top: -200px;
+        margin-left: -100px;
+        margin-bottom: -250px;
+        padding: 10px;
+        transform: scale(0.75);
+    }
+    .section{
+        padding: 10px;
+    }
+    .heading-parent{
+        padding: 20px;
+    }
+}
+/* ----------------------------xx our services xx------------------------------------------- */
+@media only screen and (max-width:1320px){
+    .allergy-advices{
+        flex-direction: column;
+        margin-top: 400px;
+        padding: 80px;
+    }
+    .content{
+        width: 80vw;
+    }
+    .momo-menu{
+        padding: 64px;
+    }    
+    .momo-menu1{
+        padding: 64px;
+    }
+    .vector-icon3{
+        width: 350px;
+    }
+}
+@media only screen and (max-width:460px){
+    .momo-menu{
+      padding: 5px;
+    }
+    .group-div{
+        transform: scale(0.75);
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+    .for-chilli-sauce-parent,
+    .for-the-chicken-filling-parent,
+    .for-the-dough-parent,
+    .for-the-vegetarian-filling-parent {
+        width: 120vw;
+        transform: scale(0.75);
+        margin-top: -100px;
+        margin-bottom: -50px;
+    }
+    .momo-menu1{
+        padding: 0px;
+        transform: scale(0.75);
+        margin-top: -300px;
+        margin-bottom: -300px;
+    }
+}
+/* ----------------------------xx contact-us xx------------------------------------------- */
+@media only screen and (max-width:1320px){
+    .our-contact-parent{
+        margin-top: 300px;
+        margin-bottom: -100px;
+        padding: 64px;
+        transform: scale(0.75);
+    }
+    .contacts-parent{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .map{
+        flex-direction: column;
+    }
+    .map1{
+        height: 400px;
+        width: 90%;
+        margin: auto;
+    }
+    .text-field6{
+        width: 256px;
+    }
+}

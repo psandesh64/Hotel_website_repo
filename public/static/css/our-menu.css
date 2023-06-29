@@ -1,0 +1,452 @@
+
+.our-menu1 {
+  position: relative;
+  font-size: 56px;
+  line-height: 120%;
+  font-family: Allura;
+}
+.our-menu-is {
+  margin: 0;
+}
+.with-a-variety {
+  margin: 0;
+  color: #101828;
+}
+.our-menu-is-container {
+  align-self: stretch;
+  position: relative;
+  line-height: 120%;
+  text-align: center;
+  color: #d95103;
+}
+.you-can-also1 {
+  position: relative;
+  font-size: 20px;
+  line-height: 160%;
+  color: #252d43;
+  text-align: center;
+}
+.content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.scan-item {
+  align-self: stretch;
+  flex: 1;
+  border-radius: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.scan2 {
+  border-radius: 12px;
+  background-color: #101828;
+  width: 192px;
+  height: 192px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.me1 {
+  position: relative;
+  line-height: 120%;
+  color: #101828;
+}
+.mobile-icon1 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.sacn1,
+.text2 {
+  justify-content: flex-start;
+}
+.text2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.sacn1 {
+  gap: 16px;
+  color: #d95103;
+}
+.heading2,
+.qr-code1,
+.sacn1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qr-code1 {
+  align-self: stretch;
+  border-radius: 16px;
+  background-color: #fafbfb;
+  overflow: hidden;
+  padding: 40px;
+  justify-content: center;
+  gap: 48px;
+}
+.heading2 {
+  margin-top: 80px;
+  left: calc(50% - 720px);
+  padding: 40px 156px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  font-size: 31px;
+  color: #0c6967;
+  font-family: "Proxima Nova";
+}
+.text3 {
+  position: absolute;
+  top: 0;
+  left: 1441px;
+  font-size: 16px;
+  line-height: 180%;
+  font-family: Inter;
+  color: #000;
+}
+.brushes-icon4 {
+  position: relative;
+  width: 201.86px;
+  height: 5.55px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.momos {
+  color: #101828;
+}
+.buff-momos {
+  position: relative;
+  line-height: 120%;
+}
+.heading3 {
+  width: 1128px;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.pngwing-2-icon {
+  position: absolute;
+  top: calc(50% - 94px);
+  left: calc(50% - 129.5px);
+  width: 260px;
+  height: 189px;
+  object-fit: cover;
+}
+.steam-momo {
+  position: relative;
+  width: 263px;
+  height: 232px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.buff-c-momo {
+  align-self: stretch;
+  position: relative;
+  line-height: 120%;
+}
+.nepalese-rupee-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.nepalese-rupee-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  text-align: left;
+  font-size: 31px;
+  color: #d95103;
+}
+.buff-c-momo-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.freshly-steamed-buff {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 180%;
+  font-family: Inter;
+  color: #6b788e;
+}
+.content3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  z-index: 1;
+}
+.new {
+  position: relative;
+  line-height: 120%;
+  font-weight: 500;
+}
+.momo-menu3,
+.status {
+  display: flex;
+  align-items: center;
+}
+.status {
+  margin: 0 !important;
+  position: absolute;
+  top: 183px;
+  left: calc(50% - 31px);
+  border-radius: 16px 0 16px 0;
+  background-color: #d95103;
+  flex-direction: row;
+  padding: 8px 16px;
+  justify-content: center;
+  z-index: 2;
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+  font-family: Inter;
+}
+.momo-menu3 {
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 436px;
+}
+.chilli-momo-icon {
+  position: absolute;
+  top: calc(50% - 99px);
+  left: calc(50% - 123.5px);
+  width: 248px;
+  height: 198px;
+  object-fit: cover;
+}
+.item,
+.status1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.status1 {
+  margin: 0 !important;
+  position: absolute;
+  top: 183px;
+  left: calc(50% - 41.5px);
+  border-radius: 16px 0 16px 0;
+  background-color: #c71720;
+  padding: 8px 16px;
+  justify-content: center;
+  z-index: 2;
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+  font-family: Inter;
+}
+.item {
+  justify-content: center;
+  gap: 80px 64px;
+  flex-wrap: wrap;
+}
+.pngegg-1-icon {
+  position: absolute;
+  top: calc(50% - 82px);
+  left: calc(50% - 126.5px);
+  width: 254px;
+  height: 164px;
+  object-fit: cover;
+}
+.status2,
+.status3 {
+  margin: 0 !important;
+  position: absolute;
+  top: 183px;
+  border-radius: 16px 0 16px 0;
+  flex-direction: row;
+  padding: 8px 16px;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+  font-family: Inter;
+}
+.status2 {
+  left: calc(50% - 31px);
+  background-color: #d95103;
+  display: none;
+}
+.status3 {
+  left: calc(50% - 66px);
+  background-color: #0072e3;
+  display: flex;
+}
+.food-item {
+  width: 936px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+  font-size: 25px;
+  color: #101828;
+  font-family: "Proxima Nova";
+}
+.momo-menu2 {
+  left: calc(50% - 720px);
+  flex-direction: column;
+  padding: 64px 156px;
+  gap: 40px;
+}
+.logo8,
+.momo-menu2,
+.momo-menu7 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.momo-menu7 {
+  left: calc(50% - 720px);
+  flex-direction: column;
+  padding: 64px 156px;
+  gap: 40px;
+}
+.logo8 {
+  text-decoration: none;
+  align-self: stretch;
+  width: 168px;
+  flex-direction: row;
+  padding: 16px 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+.boldarrow-down-icon4 {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  display: none;
+}
+.item-link4 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 12px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+  color: inherit;
+}
+.about-us6 {
+  position: relative;
+  line-height: 120%;
+  font-weight: 600;
+}
+.item-link6,
+.links5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link6 {
+  text-decoration: none;
+  padding: 8px 12px;
+  gap: 2px;
+  color: #0c6967;
+}
+.links5 {
+  align-self: stretch;
+  flex: 1;
+  gap: 8px;
+  font-size: 14px;
+  color: #6b788e;
+  font-family: Inter;
+}
+.social-icon15 {
+  text-decoration: none;
+  position: relative;
+  border-radius: 100px;
+  background-color: #a6aebb;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.social-media1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.arrow-left-icon1 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.large-button1 {
+  position: relative;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: center;
+}
+.button1,
+.buttons1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 12px 22px;
+  background-color: #d95103;
+  border-radius: 100px;
+  justify-content: center;
+  gap: 8px;
+}
+.buttons1 {
+  align-self: stretch;
+  width: 360px;
+  justify-content: flex-end;
+  gap: 32px;
+}
+.our-menu {
+  background-color: #fff;
+  text-align: left;
+}
+.our-menu {
+  overflow: hidden;
+  font-size: 40px;
+  color: #d95103;
+  font-family: "Chela One";
+}

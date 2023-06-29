@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% block content %}
+  <div class="our-services">
+    <div class="our-services1">
+      <div class="content14">
+        <div class="got-any-queries">Our Services</div>
+        <div class="knowing-our-customers-needs-parent">
+          <div class="knowing-our-customers">KNOWING OUR CUSTOMERS NEEDS</div>
+          <b class="were-more-than-container">
+            <p class="were-more-than">We're more than just momos.</p>
+            <p class="were-a-full-service">
+              We're a full-service dining experience.
+            </p>
+          </b>
+        </div>
+      </div>
+      <div class="group-div">
+        <img class="group-item" alt="" src="{% static 'images/frame-121@2x.png' %}" />
+
+        <img class="group-inner" alt="" src="{% static 'images/frame-121@2x.png' %}" />
+
+        <img class="group-icon" alt="" src="{% static 'images/chef2.png' %}" />
+      </div>
+    </div>
+
+    <div class="video1">
+      <img class="image-icon4" alt="" src="{% static 'images/videobg.png' %}" />
+      <div class="video-container">
+        <div class="shadow1">
+        </div>
+        {% video videos.video 'large' %}
+      </div>
+      <div class="content13">
+        <b class="got-any-queries">Dine With Us</b>
+        <div class="enjoy-our-momos">
+          Enjoy our momos in the comfort of your own home with our delivery
+          services
+        </div>
+      </div>
+      <button class="button3" onclick="playVideo()">
+        <img
+          class="boldplay-circle-icon"
+          alt=""
+          src="{% static 'images/boldplaycircle.svg' %}"
+        />
+
+        <div class="watch-the-video">Watch the Video</div>
+        <img
+          class="outlinearrow-right-icon"
+          alt=""
+          src="{%static 'images/outlinearrowright.svg' %}"
+        />
+      </button>
+    </div>
+    
+    <div class="about-parent">
+      <div class="about">
+        <div class="services9">
+          <div class="about-us8">
+            <div class="heading5">
+              <img class="party-icon" alt="" src="{% static 'images/party.svg' %}" />
+
+              <b class="private-party">Private Party</b>
+            </div>
+            <div class="if-you-have">
+              Lorem ipsum dolor sit amet consectetur. Lectus faucibus lorem ac
+              adipiscing. Leo odio tincidunt ipsum magna lacus viverra
+              tincidunt.
+            </div>
+          </div>
+          <div class="qr-code2">
+            <div class="content11">
+              <b class="got-any-queries">Scan the QR code</b>
+              <div class="you-can-also2">
+                You can also check about the service
+              </div>
+            </div>
+            <img class="qr-code-icon" alt="" src="{% static 'images/qr1.png' %}" />
+          </div>
+        </div>
+        <div class="image">
+          <div class="image1">
+            <img class="image-icon" alt="" src="{% static 'images/ourservice.png' %}" />
+
+            <img class="image-icon" alt="" src="{% static 'images/ourservice1.png' %}" />
+          </div>
+          <img class="shadow-icon" alt="" src="{% static 'images/shadow@2x.png' %}" />
+
+          <div class="slider">
+            <div class="slider-child"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+          </div>
+          <div class="arrow-right">
+            <img
+              class="linear-arrow-right"
+              alt=""
+              src="{% static 'images/arrowright.svg' %}"
+            />
+          </div>
+          <div class="arrow-left">
+            <img
+              class="linear-arrow-right"
+              alt=""
+              src="{% static 'images/arrowleft.svg' %}"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="about" id="abt1">
+        <div class="image">
+          <div class="image1">
+            <img class="image-icon" alt="" src="{% static 'images/ourservice1.png' %}" />
+
+            <img class="image-icon" alt="" src="{% static 'images/ourservice.png' %}" />
+          </div>
+          <img class="shadow-icon" alt="" src="{% static 'images/shadow@2x.png' %}" />
+
+          <div class="slider">
+            <div class="slider-child"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+          </div>
+          <div class="arrow-right">
+            <img
+              class="linear-arrow-right"
+              alt=""
+              src="{% static 'images/arrowright.svg' %}"
+            />
+          </div>
+          <div class="arrow-left">
+            <img
+              class="linear-arrow-right"
+              alt=""
+              src="{% static 'images/arrowleft.svg' %}"
+            />
+          </div>
+        </div>
+        <div class="services9">
+          <div class="about-us8">
+            <div class="heading6">
+              <img class="party-icon" alt="" src="{% static 'images/chef.svg' %}" />
+
+              <b class="private-party">Categring</b>
+            </div>
+            <p class="lorem-ipsum-dolor5">
+              Lorem ipsum dolor sit amet consectetur. Lectus faucibus lorem ac
+              adipiscing. Leo odio tincidunt ipsum magna lacus viverra
+              tincidunt.
+            </p>
+          </div>
+          <div class="qr-code2">
+            <div class="content11">
+              <b class="got-any-queries">Scan the QR code</b>
+              <div class="you-can-also2">
+                You can also check about the service
+              </div>
+            </div>
+            <img class="qr-code-icon" alt="" src="{% static 'images/qr1.png' %}" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="heading-parent">
+        <div class="heading7">
+          <div class="got-any-queries-wrapper">
+            <b class="got-any-queries">Got any Queries?</b>
+          </div>
+          <div class="if-you-have">
+            If you have any queries, send us a message. Our Friendly team
+            would love to hear from you
+          </div>
+        </div>
+        <button class="button2">
+          <img
+            class="outlinearrow-right-icon"
+            alt=""
+            src="{% static 'images/arrowleft.svg' %}"
+          />
+
+          <div class="watch-the-video">Get In Touch</div>
+          <img
+            class="outlinearrow-right-icon"
+            alt=""
+            src="{% static 'images/outlinearrowright.svg' %}"
+          />
+        </button>
+      </div>
+    </div>
+    
+    
+  </div>
+<script src="{% static 'js/our-services.js' %}"></script>
+<script src="{% static 'js/resp.js' %}"></script>
+
+{% endblock %}

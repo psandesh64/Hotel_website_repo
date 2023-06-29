@@ -1,0 +1,410 @@
+
+.text {
+  top: 865px;
+  left: 157px;
+  line-height: 180%;
+}
+.vector-icon2 {
+  position: absolute;
+  right: 5vw;
+  bottom: 0;
+  width: 335px;
+  height: 432px;
+  z-index: 0;
+}
+.vecteezy-spices-and-herbs-on-a-icon {
+  position: absolute;
+  top: calc(50% - 366px);
+  width: 100vw;
+  object-fit: cover;
+  z-index: 1;
+}
+.vector-icon3 {
+  position: absolute;
+  margin: 0 !important;
+  top: 210px;
+  left: 10vw;
+  width: 521px;
+  height: 490px;
+  z-index: 2;
+}
+.brushes-icon {
+  position: relative;
+  width: 30%;
+  height: 5.55px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.used {
+  color: #101828;
+}
+.bullet1,
+.heading {
+  box-sizing: border-box;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  z-index: 3;
+  font-size: 40px;
+  color: #d95103;
+  font-family: "Chela One";
+}
+.bullet1 {
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #d95103;
+  width: 12px;
+  height: 12px;
+}
+.penuts {
+  position: relative;
+  line-height: 120%;
+  font-weight: 600;
+}
+.bullet,
+.points {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.points {
+  border-bottom: 1px solid #ebedf0;
+  flex-direction: row;
+  padding: 8px 0 12px;
+  align-items: center;
+  gap: 16px;
+}
+.bullet {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: center;
+  font-size: 20px;
+}
+.for-chilli-sauce-parent,
+.for-the-chicken-filling-parent,
+.for-the-dough-parent,
+.for-the-vegetarian-filling-parent {
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 54px 60px 22px transparent, 34px 38px 21px transparent,
+    19px 21px 17px rgba(0, 0, 0, 0.02), 9px 10px 13px rgba(0, 0, 0, 0.03),
+    2px 2px 7px rgba(0, 0, 0, 0.03), 0 0 0 rgba(0, 0, 0, 0.03);
+  border: 4px solid #0c6967;
+  box-sizing: border-box;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  padding: 56px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  z-index: 4;
+}
+.for-chilli-sauce-parent,
+.for-the-chicken-filling-parent,
+.for-the-vegetarian-filling-parent {
+  z-index: 5;
+}
+.for-chilli-sauce-parent,
+.for-the-vegetarian-filling-parent {
+  z-index: 6;
+}
+.for-chilli-sauce-parent {
+  z-index: 7;
+}
+.momo-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 156px;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  font-size: 25px;
+  color: #101828;
+  font-family: "Proxima Nova";
+}
+.at-our-restaurant {
+  position: relative;
+  letter-spacing: 0.12em;
+  font-weight: 300;
+}
+.we-use-only {
+  margin: 0;
+}
+.and-offer-transparency {
+  margin: 0;
+  color: #d95103;
+}
+.we-use-only-container {
+  align-self: stretch;
+  position: relative;
+  font-size: 31px;
+  line-height: 140%;
+  color: #101828;
+}
+.at-our-restaurant-parent,
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.at-our-restaurant-parent {
+  align-self: stretch;
+  gap: 24px;
+  font-size: 24px;
+  color: #6b788e;
+  font-family: "Proxima Nova";
+}
+.content {
+  flex: 1;
+  padding: 0 0 64px;
+  gap: 40px;
+  width: 40vw;
+}
+
+.allergy-advices,
+.heading1 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+.allergy-advices {
+  margin-top: 80px;
+  left: calc(50% - 720px);
+  width: 100%;
+  padding: 56px 156px;
+  justify-content: flex-start;
+  gap: 58px;
+  font-size: 56px;
+  color: #0c6967;
+  font-family: Allura;
+}
+.heading1 {
+  width: 100%;
+  padding: 40px;
+  justify-content: center;
+  gap: 40px;
+}
+.blank-line {
+  display: block;
+}
+.lorem-ipsum-dolor-container {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 180%;
+  font-family: Inter;
+  color: #252d43;
+}
+.you-can-also {
+  position: relative;
+  font-size: 20px;
+  line-height: 160%;
+  color: #252d43;
+  text-align: center;
+}
+.content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.scan-child {
+  align-self: stretch;
+  flex: 1;
+  border-radius: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.scan {
+  border-radius: 12px;
+  background-color: #101828;
+  width: 192px;
+  height: 192px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.me {
+  position: relative;
+  line-height: 120%;
+  color: #101828;
+}
+.mobile-icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.sacn,
+.text1 {
+  justify-content: flex-start;
+}
+.text1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.sacn {
+  flex-direction: column;
+  gap: 16px;
+  color: #d95103;
+}
+.logo3,
+.momo-menu1,
+.qr-code,
+.sacn {
+  display: flex;
+  align-items: center;
+}
+.qr-code {
+  align-self: stretch;
+  border-radius: 16px;
+  background-color: #fafbfb;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+  gap: 48px;
+  font-size: 31px;
+  color: #0c6967;
+  font-family: "Proxima Nova";
+}
+.logo3,
+.momo-menu1 {
+  box-sizing: border-box;
+}
+.momo-menu1 {
+  width: 100%;
+  flex-direction: column;
+  padding: 64px 156px;
+  justify-content: center;
+  gap: 56px;
+  font-size: 40px;
+  color: #d95103;
+  font-family: "Chela One";
+}
+.logo3 {
+  text-decoration: none;
+  align-self: stretch;
+  width: 168px;
+  flex-direction: row;
+  padding: 16px 0;
+  justify-content: flex-start;
+  color: inherit;
+}
+.about-us {
+  position: relative;
+  line-height: 120%;
+  font-weight: 500;
+}
+.boldarrow-down-icon {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  display: none;
+}
+.item-link {
+  text-decoration: none;
+  padding: 8px 12px;
+  gap: 2px;
+  color: inherit;
+}
+.item-link,
+.item-link3,
+.links2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link3 {
+  text-decoration: none;
+  padding: 8px 12px;
+  gap: 2px;
+  color: #0c6967;
+}
+.links2 {
+  align-self: stretch;
+  flex: 1;
+  gap: 8px;
+  font-size: 14px;
+  color: #6b788e;
+  font-family: Inter;
+}
+.social-icon6 {
+  text-decoration: none;
+  position: relative;
+  border-radius: 100px;
+  background-color: #a6aebb;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.arrow-left-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.large-button {
+  position: relative;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: center;
+}
+.button,
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 12px 22px;
+  background-color: #d95103;
+  border-radius: 100px;
+  justify-content: center;
+  gap: 8px;
+}
+.buttons {
+  align-self: stretch;
+  width: 360px;
+  justify-content: flex-end;
+  gap: 32px;
+}
+.allergy-advice {
+  background-color: #fff;
+  text-align: left;
+}
+.allergy-advice {
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  font-family: Inter;
+}

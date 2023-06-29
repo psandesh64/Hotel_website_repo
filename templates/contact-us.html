@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="contact-us">
+    
+    <div class="our-contact-parent">
+      <div class="our-contact">Our Contact</div>
+      <div class="get-in-touch-parent">
+        <div class="get-in-touch">GET IN TOUCH</div>
+        <b class="our-friendly-team-container">
+          <span>Our Friendly Team</span>
+          <span class="would-love-to"> would love to hear from you</span>
+        </b>
+      </div>
+      <div class="contacts-parent">
+        <div class="contacts">
+          <div class="icon">
+            <img
+              class="boldlocation-icon"
+              alt=""
+              src="{% static 'images/boldlocation.svg' %}"
+            />
+
+            <div class="location">LOCATION</div>
+          </div>
+          <i class="new-baneshwor-41201"
+            >New Baneshwor -41201, Kathmandu, Bagmati, Nepal</i
+          >
+        </div>
+        <div class="contacts">
+          <div class="icon">
+            <img
+              class="boldlocation-icon"
+              alt=""
+              src="{% static 'images/boldcallcalling.svg' %}"
+            />
+
+            <div class="location">PHONE</div>
+          </div>
+          <div class="frame-parent1">
+            <div class="mobile-parent">
+              <div class="location">Mobile:</div>
+              <div class="parent">
+                <i class="i">(+977) 980 5689789</i>
+                <i class="i">(+977) 9841 275897</i>
+              </div>
+            </div>
+            <div class="mobile-parent">
+              <div class="location">Tel:</div>
+              <div class="wrapper">
+                <i class="i">01-4783972</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="icon">
+            <img
+              class="boldlocation-icon"
+              alt=""
+              src="{% static 'images/boldclock.svg' %}"
+            />
+
+            <div class="location">SERVICE TIME</div>
+          </div>
+          <div class="frame-parent1">
+            <div class="mobile-parent">
+              <div class="location">MON - FRI</div>
+              <i class="closed">8 am - 8 pm</i>
+            </div>
+            <div class="mobile-parent">
+              <div class="location">SAT - SUN</div>
+              <i class="closed">Closed</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="map1">
+        <!--The div element for the map -->
+        <div id="map"></div>
+
+        <!-- prettier-ignore -->
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyBpOQyuVy5hrSaVveYwDwWfF7ZdzS_cUyA", v: "beta"});</script>
+
+        <div class="direction">
+          <div class="frame-parent3">
+            <div class="new-baneshwor-kathmandu-bagm-parent">
+              <div class="location">
+                Koteshwor, Kathmandu, Bagmati, Nepal
+              </div>
+              <div class="get-direction-parent">
+                <div class="get-direction">Get Direction ></div>
+              </div>
+            </div>
+            <img class="frame-child109" alt="" src="" />
+          </div>
+        </div>
+
+      </div>
+      <div class="get-in-touch-wrapper">
+        
+        <form class="get-in-touch1" method="post"  action="{% url 'get-in-touch' %}">
+          {% csrf_token %}
+          <div class="heading8">
+            <b class="contact-us1">
+              <span class="would-love-to">Contact </span>
+              <span class="us">Us</span>
+            </b>
+            <p class="if-you-have1">
+              If you have any queries, send us a message. Our Friendly team
+              would love to hear from you
+            </p>
+          </div>
+          <div class="container-field1">
+            <div class="text-field-group">
+              <div class="text-field6">
+                <div class="boldlocation-parent">
+                  <div class="label-palceholder6">First Name</div>
+                </div>
+                <input
+                  class="placeholder9"
+                  type="text"
+                  name="first_name"
+                  maxlength=50
+                  minlength=2
+                  required
+                />
+              </div>
+  
+              <div class="text-field6">
+                <div class="boldlocation-parent">
+                  <div class="label-palceholder6">Last Name</div>
+                </div>
+                <input
+                  class="placeholder9"
+                  type="text"
+                  name="last_name"
+                  maxlength=50
+                  minlength=2
+                  required
+                />
+  
+              </div>
+            </div>
+            <div class="text-field8">
+              <div class="boldlocation-parent">
+                <div class="label-palceholder6">Email</div>
+              </div>
+              <input
+                class="placeholder9"
+                type="email"
+                name="email"
+                maxlength=50
+                minlength=9
+                required
+              />
+  
+            </div>
+            <div class="text-field8">
+              <div class="boldlocation-parent">
+                <div class="label-palceholder6">What can we do for you</div>
+              </div>
+              <div class="placeholder12">
+                
+                <select name="choose_option" class="placeholder13">
+                  <option class="placeholder14" disabled selected>Choose</div>
+                  <option value="Order Food">Order Food</option>
+                  <option value="Technical Help">Technical Help</option>
+                  <option value="Customer Complain">Customer Complain</option>
+                  <option value="Customer Suggestion">Customer Suggestion</option>
+                </select>
+              
+              </div>
+  
+            </div>
+            <div class="text-field8">
+              <div class="boldlocation-parent">
+                <div class="label-palceholder6">Phone Number</div>
+              </div>
+              <div class="placeholder15">
+                <select class="country-code1">
+                  <option>
+                    <img class="flags-icon1" alt="" src="{% static 'images/flags.svg' %}" />
+  
+                    <div class="code1">
+                      <div class="div3">+977</div>
+                    </div>
+                  </option>
+                </select>
+                <input class="placeholder14" type="tel" name="phone" maxlength=10
+                minlength=10 required>
+              </div>
+          
+            </div>
+            <div class="text-field11">
+              <div class="boldlocation-parent">
+                <div class="label-palceholder6">Message</div>
+              </div>
+              <textarea name="text_area" class="placeholder17"></textarea>
+            </div>
+          </div>
+          <button class="button15" type="submit">
+            <div class="large-button7">Send Message</div> 
+          </button>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+<script src="{% static 'js/index.js' %}"></script>
+<script src="{% static 'js/resp.js' %}"></script>
+{% endblock %}

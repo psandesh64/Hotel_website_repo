@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% block content %}
+
+<div class="about-us18">
+  <div class="about-us-parent">
+    <div class="about1">
+      <div class="about-us19">About Us</div>
+      <div class="texts">
+        <div class="we-pride-ourself">WE PRIDE OURSELF ON</div>
+        <b class="our-authentic-momo-container">
+          <span>Our authentic momo recipes</span></br>
+          <span class="passed-down-through">
+            passed down through generations</span
+          >
+        </b>
+      </div>
+    </div>
+
+    <div class="frame-parent4">
+      <img class="frame-icon" alt="" src="{% static 'images/frame-121@2x.png' %}" />
+
+      <img class="group-child1" alt="" src="{% static 'images/frame-121@2x.png' %}" />
+
+      <img class="group-child2" alt="" src="{% static 'images/chef1.png' %}" />
+    </div>
+  </div>
+  <div class="video1">
+    <img class="quote-child" alt="" src="{% static 'images/video1cover.png' %}" />
+
+    <div class="video-container">
+      <div class="shadow1">
+      </div>
+      {% video videos.video 'large' %}
+    </div>
+
+    <div class="content15">
+      <b class="process-behind-the">Process behind the making</b>
+      <div class="see-how-we">
+        See how we make momos that you like from only the best ingredients
+      </div>
+    </div>
+    <button class="button7" onclick="playVideo()">
+      <img
+        class="boldplay-circle-icon1"
+        alt=""
+        src="{% static 'images/boldplaycircle.svg' %}"
+      />
+
+      <div class="watch-the-video1">Watch the Video</div>
+       
+    </button>
+  </div>
+
+  <div class="about2">
+    <div class="about3">
+      <div class="about-us20">
+        <div class="heading9">
+          <b class="our-momos-are-container">
+            <span>Our momos are</span>
+            <span class="made-with-love"> made with love</span>
+          </b>
+        </div>
+        <div class="lorem-ipsum-dolor7">
+          Lorem ipsum dolor sit amet consectetur. Lectus faucibus lorem ac
+          adipiscing. Leo odio tincidunt ipsum magna lacus viverra
+          tincidunt. Viverra aliquet sollicitudin eget dapibus. Vestibulum
+          velit viverra gravida consectetur sed facilisis ut morbi.
+        </div>
+      </div>
+      <img class="about-child" alt="" src="{% static 'images/aboutus1.png' %}" />
+
+      <img
+        class="pngwing-2-icon4"
+        alt=""
+        src="{% static 'images/steam-momo@2x.png' %}"
+      />
+    </div>
+    <div class="about3" id="ab3">
+      <img class="about-item" alt="" src="{% static 'images/aboutus2.png' %}" />
+
+      <div class="about-us21">
+        <div class="heading9">
+          <b class="our-momos-are-container">
+            <span>Taste the difference with </span>
+            <span class="made-with-love">our handcrafted momos</span>
+          </b>
+        </div>
+        <div class="lorem-ipsum-dolor7">
+          Lorem ipsum dolor sit amet consectetur. Lectus faucibus lorem ac
+          adipiscing. Leo odio tincidunt ipsum magna lacus viverra
+          tincidunt. Viverra aliquet sollicitudin eget dapibus. Vestibulum
+          velit viverra gravida consectetur sed facilisis ut morbi.
+        </div>
+      </div>
+      <img class="pngegg-1-icon2" alt="" src="{% static 'images/fry-momo@2x.png' %}" />
+    </div>
+    <div class="about3">
+      <div class="about-us20">
+        <div class="heading9">
+          <b class="our-momos-are-container">
+            <span>Our momos are the perfect </span>
+            <span class="made-with-love">blend of tradition</span>
+            <span> and </span>
+            <span class="made-with-love">innovation</span>
+          </b>
+        </div>
+        <div class="lorem-ipsum-dolor7">
+          Lorem ipsum dolor sit amet consectetur. Lectus faucibus lorem ac
+          adipiscing. Leo odio tincidunt ipsum magna lacus viverra
+          tincidunt. Viverra aliquet sollicitudin eget dapibus. Vestibulum
+          velit viverra gravida consectetur sed facilisis ut morbi.
+        </div>
+      </div>
+      <img class="about-child" alt="" src="{% static 'images/aboutus3.png' %}" />
+
+      <img
+        class="vbss64ar4ftv20rdkigdgqdt6f-1-icon"
+        alt=""
+        src="{% static 'images/momostyled.png' %}"
+      />
+    </div>
+  </div>
+
+  <div class="sliderdiv1">
+    {% for bstaff in bstaffs %}
+    <div class="slide1">
+      <div class="quote">
+        <img class="quote-child" alt="" src="{% static 'images/rectangle-12@2x.png' %}" />
+
+        <div class="quote-item"></div>
+        <div class="myhello">
+
+          
+          <div class="quote1">
+            <article class="quote2">
+              <img class="quote-icon" alt="" src="{% static 'images/quote.svg' %}" />
+
+              <div class="momo-is-not">
+                {{ bstaff.comment }}
+              </div>
+            </article>
+            <div class="marcus-schleifer-parent">
+              <b class="process-behind-the">{{ bstaff.name }}</b>
+              <b class="see-how-we">{{ bstaff.position }}</b>
+            </div>
+          </div>
+          
+          <img class="quote-inner" alt="" src="{{ bstaff.b_staff_image.url }}" />
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="button8">
+      <button class="arrow" onclick="goPrev()">
+        <img
+          class="arrow-arrow-right-md"
+          alt=""
+          src="{% static 'images/arrow--arrow-right-md.svg' %}"
+        />
+      </button>
+      <button class="arrow" onclick="goNext()">
+        <img
+          class="arrow-arrow-right-md"
+          alt=""
+          src="{% static 'images/arrow--arrow-left-md.svg' %}"
+        />
+      </button>
+    </div>
+  </div>
+  
+  <div class="out-team">
+    <div class="heading12">
+      <b class="process-behind-the">
+        <span>Meet The </span>
+        <span class="made-with-love">Team</span>
+      </b>
+      <b class="our-talented-team"
+        >Our talented team members who delivers only the best results</b
+      >
+    </div>
+
+  
+    <div class="chef">
+      {% for tstaff in tstaffs %}
+      <div class="slide2">
+        <div class="our-team">
+          <img class="quote-child" alt="" src="{{ tstaff.team_staff_image.url }}" />
+
+          <div class="shadow2"></div>
+          <div class="content16">
+            <div class="text4">
+              <b class="head-chef">{{ tstaff.position }}</b>
+              <div class="our-momos-are">
+                Our momos are more than just food, they're a cultural
+                experience.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+
+
+    <div class="frame-parent5">
+      <div class="group">
+        <div class="b8 div1">01</div>
+        <div class="div1">/</div>
+        <div class="b8 div1">04</div>
+      </div>
+      <div class="arrow-parent">
+        <button class="arrow2" onclick="goPrev2()">
+          <img
+            class="arrow-arrow-right-md"
+            alt=""
+            src="{% static 'images/arrow--arrow-right-md.svg' %}"
+          />
+        </button>
+        <button class="arrow2" onclick="goNext2()">
+          <img
+            class="arrow-arrow-right-md"
+            alt=""
+            src="{% static 'images/arrow--arrow-left-md.svg' %}"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{% static 'js/about-us.js' %}"></script>
+<script src="{% static 'js/resp.js' %}"></script>
+{% endblock %}

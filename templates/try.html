@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Category Items</title>
+  <style>
+    .category-items {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button onclick="showCategory('buff')">Buff</button>
+    <button onclick="showCategory('chicken')">Chicken</button>
+    <button onclick="showCategory('veg')">Veg</button>
+  </div>
+
+  <div id="buffItems" class="category-items">
+    <h2>Buff Category</h2>
+    <ul>
+      <li>Steam momo, Price: 180</li>
+      <li>C momo, Price: 200</li>
+      <li>Fry Momo, Price: 220</li>
+      <li>Jhol Momo, Price: 240</li>
+    </ul>
+  </div>
+
+  <div id="chickenItems" class="category-items">
+    <h2>Chicken Category</h2>
+    <ul>
+      <li>Chicken Item 1</li>
+      <li>Chicken Item 2</li>
+      <li>Chicken Item 3</li>
+      <li>Chicken Item 4</li>
+    </ul>
+  </div>
+
+  <div id="vegItems" class="category-items">
+    <h2>Veg Category</h2>
+    <ul>
+      <li>Veg Item 1</li>
+      <li>Veg Item 2</li>
+      <li>Veg Item 3</li>
+      <li>Veg Item 4</li>
+    </ul>
+  </div>
+
+  <script>
+    function showCategory(category) {
+      // Hide all category items
+      var categoryItems = document.getElementsByClassName('category-items');
+      for (var i = 0; i < categoryItems.length; i++) {
+        categoryItems[i].style.display = 'none';
+      }
+
+      // Show the selected category
+      var selectedCategoryItems = document.getElementById(category + 'Items');
+      if (selectedCategoryItems) {
+        selectedCategoryItems.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="mybox">
+    <div class="home-child"></div>
+    <div class="home-item">
+      <img class="myimg" alt="" src="{% static 'images/homepage_momo.png' %}" />
+    </div>
+    <div class="content19">
+      <div class="content20">
+        <div class="restaurant">RESTAURANT</div>
+        <div class="group-parent">
+          <img class="frame-child110" alt="" src="{% static 'images/group-1.svg' %}" />
+
+          <div class="frame-parent6">
+            <div class="the-parent">
+              <b class="the">The</b>
+              <b class="one">#One</b>
+            </div>
+            <b class="the">
+              <span>Momo </span>
+              <span class="love-us">Restaurant</span>
+            </b>
+          </div>
+        </div>
+        <div class="more-than-parent">
+          <div class="more-than">More than</div>
+          <b class="varieties">20+ Varieties</b>
+          <div class="more-than">of momo available for you</div>
+        </div>
+      </div>
+      <button class="button10">
+        <img class="arrow-left-icon7" alt="" src="" />
+
+        <div class="large-button7">Explore Food Menu</div>
+        <img
+          class="boldcall-icon"
+          alt=""
+          src="{% static 'images/outlinearrowright.svg' %}"
+        />
+      </button>
+    </div>
+  </div>
+  <div class="about-us27">
+    <img class="about-us-child" alt="" src="{% static 'images/frame-3@2x.png' %}" />
+
+    <div class="about-us28">
+      <div class="heading13">
+        <b class="the">
+          <span>Why Customers </span>
+          <span class="love-us">Love Us</span>
+        </b>
+      </div>
+      <p class="lorem-ipsum-dolor11">
+        Lorem ipsum dolor sit amet consectetur. Sed diam dolor vivamus nibh
+        fermentum vulputate tortor. Egestas facilisi luctus turpis arcu
+        dignissim. Amet neque enim etiam purus id. Tortor sit orci blandit
+        cursus turpis.
+      </p>
+      <button class="button10">
+        <img
+          class="arrow-left-icon7"
+          alt=""
+          src=""
+        />
+
+        <div class="large-button7">Explore Our Story</div>
+        <img
+          class="boldcall-icon"
+          alt=""
+          src="{% static 'images/outlinearrowright.svg' %}"
+        />
+      </button>
+    </div>  
+  </div>
+  <div class="our-recepies">
+    <div class="our-most-popular-recipes-parent">
+      <b class="the">
+        <span>Our </span>
+        <span class="love-us">Most Popular</span>
+        <span> Recipes</span>
+      </b>
+      <div class="browse-through-a">
+        Browse through a varieties of recipes with fresh ingredients
+        selected only from the best places
+      </div>
+    </div>
+    <div class="frame-parent7">
+      <button class="buff-wrapper">
+        <div class="buff">Buff</div>
+      </button>
+      <button class="buff-wrapper">
+        <div class="buff">Chicken</div>
+      </button>
+      <button class="buff-wrapper">
+        <div class="buff">Veg</div>
+      </button>
+    </div>
+    <div class="arrow-group">
+      <button class="arrow4">
+        <img
+          class="arrow-arrow-right-md2"
+          alt=""
+          src="{% static 'images/arrow--arrow-right-md.svg' %}"
+        />
+      </button>
+      <div class="menu-parent">
+        
+        <div class="menu">
+          <img
+            class="steam-momo-icon"
+            alt=""
+            src="{% static 'images/steam-momo@2x.png' %}"
+          />
+
+          <div class="content21">
+            <b class="buff-fry-momo">Buff Momo</b>
+            <div class="nepalese-rupee-parent6">
+              <img
+                class="arrow-arrow-right-md2"
+                alt=""
+                src="{% static 'images/nepalese-rupee.svg' %}"
+              />
+
+              <b class="the">150</b>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu">
+          <img
+            class="steam-momo-icon"
+            alt=""
+            src="{% static 'images/fry-momo@2x.png' %}"
+          />
+
+          <div class="content21">
+            <b class="buff-fry-momo">Buff Fry Momo</b>
+            <div class="nepalese-rupee-parent6">
+              <img
+                class="arrow-arrow-right-md2"
+                alt=""
+                src="{% static 'images/nepalese-rupee.svg' %}"
+              />
+
+              <b class="the">180</b>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img
+            class="steam-momo-icon"
+            alt=""
+            src="{% static 'images/c-momo@2x.png' %}"
+          />
+
+          <div class="content21">
+            <b class="buff-fry-momo">Buff C. Momo</b>
+            <div class="nepalese-rupee-parent6">
+              <img
+                class="arrow-arrow-right-md2"
+                alt=""
+                src="{% static 'images/nepalese-rupee.svg' %}"
+              />
+
+              <b class="the">200</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="arrow4">
+        <img
+          class="arrow-arrow-right-md2"
+          alt=""
+          src="{% static 'images/arrow--arrow-left-md.svg' %}"
+        />
+      </button>
+    </div>
+    <button class="button10">
+      <img class="arrow-left-icon7" alt="" src="" />
+
+      <div class="large-button7">Explore Our Menu</div>
+      <img
+        class="boldcall-icon"
+        alt=""
+        src="{% static 'images/outlinearrowright.svg' %}"
+      />
+    </button>
+  </div>
+  <div class="our-services3">
+    <div class="heading14">
+      <b class="the">
+        <span>We Offer People</span>
+        <span class="the-service-they"> The Service They Want</span>
+      </b>
+    </div>
+    <video class="video2" controls>
+      <source />
+    </video>
+    <div class="our-services4">
+      <div class="services-container">
+        <div class="service">
+          <img class="quality-icon" alt="" src="{% static 'images/quality.svg' %}" />
+
+          <b class="the">Quality Food</b>
+          <div class="only-the-best">
+            Only the best food with top quality products and ingredients
+          </div>
+        </div>
+        <div class="service">
+          <img class="quality-icon" alt="" src="{% static 'images/party.svg' %}" />
+
+          <b class="the">Private Party</b>
+          <div class="only-the-best">
+            Get the best food for all your private parties and gatherings
+          </div>
+        </div>
+        <div class="service">
+          <img class="quality-icon" alt="" src="{% static 'images/chef.svg' %}" />
+
+          <b class="the">Categring</b>
+          <div class="only-the-best">
+            Get the best food for any occasions and gatherings
+          </div>
+        </div>
+      </div>
+      <button class="button10">
+        <img
+          class="arrow-left-icon7"
+          alt=""
+          src=""
+        />
+
+        <div class="large-button7">Explore Our Services</div>
+        <img
+          class="boldcall-icon"
+          alt=""
+          src="{% static 'images/outlinearrowright.svg' %}"
+        />
+      </button>
+    </div>
+  </div>
+  <div class="testimonials">
+    <div class="heading-group">
+      <div class="heading15">
+        <b class="the">
+          <span>200+ </span>
+          <span class="love-us">Happy Customers</span>
+        </b>
+        <b class="what-our-customers">What our customers say about us</b>
+      </div>
+      <div class="quote3">
+        <i class="only-the-best3"
+          >“Only the best momo you can find in the market. Different
+          Varieties of momo to choose from. Will be visiting again soon”</i
+        >
+        <b class="livia-dias">Livia Dias</b>
+      </div>
+      <div class="button14">
+        <button class="arrow6">
+          <img
+            class="arrow-arrow-right-md2"
+            alt=""
+            src="{% static 'images/arrow--arrow-right-md.svg' %}"
+          />
+        </button>
+        <button class="arrow6">
+          <img
+            class="arrow-arrow-right-md2"
+            alt=""
+            src="{% static 'images/arrow--arrow-left-md.svg' %}"
+          />
+        </button>
+      </div>
+    </div>
+    <img
+      class="testimonials-child"
+      alt=""
+      src="{% static 'images/rectangle-8@2x.png' %}"
+    />
+  </div>
+  <div class="heading-container">
+    <div class="heading16">
+      <b class="the">
+        <span>Get </span>
+        <span class="love-us">In Touch</span>
+      </b>
+      <b class="what-our-customers"
+        >Our Friendly team would love to hear from you</b
+      >
+    </div>
+    <div class="frame-parent8">
+      <div class="frame-parent9">
+        <div class="frame-parent10">
+          <div class="boldlocation-parent">
+            <img
+              class="boldcall-icon"
+              alt=""
+              src="{% static 'images/boldlocation.svg' %}"
+            />
+
+            <div class="more-than">Our Address</div>
+          </div>
+          <i class="new-baneshwor-kathmandu1"
+            >New Baneshwor, Kathmandu, Bagmati, Nepal</i
+          >
+        </div>
+        <div class="frame-parent11">
+          <div class="boldlocation-parent">
+            <img class="boldcall-icon" alt="" src="{% static 'images/boldcall.svg' %}" />
+
+            <div class="more-than">Our Contacts</div>
+          </div>
+          <div class="frame-parent12">
+            <div class="mobile-group">
+              <div class="mobile1">Mobile</div>
+              <i class="i3">980 5689789</i>
+              <i class="i3">9841 275897</i>
+            </div>
+            <div class="landline-parent">
+              <div class="more-than">Landline</div>
+              <i class="i5">01-4783972</i>
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent13">
+          <div class="boldlocation-parent">
+            <img
+              class="boldcall-icon"
+              alt=""
+              src="{% static 'images/boldclock.svg' %}"
+            />
+
+            <div class="more-than">Our Service Time</div>
+          </div>
+          <div class="frame-parent14">
+            <div class="mobile-group">
+              <div class="more-than">MON - FRI</div>
+              <i class="i5">10 am - 8 pm</i>
+            </div>
+            <div class="mobile-group">
+              <div class="more-than">SAT - SUN</div>
+              <i class="i5">Closed</i>
+            </div>
+          </div>
+        </div>
+        <div class="get-in-touch-in-social-network-parent">
+          <i class="i3">Get in touch in social networks</i>
+          <div class="button14">
+            <img
+              class="icbaseline-facebook-icon"
+              alt=""
+              src="{% static 'images/icbaselinefacebook.svg' %}"
+            />
+
+            <img
+              class="icbaseline-facebook-icon"
+              alt=""
+              src="{% static 'images/phinstagramlogofill.svg' %}"
+            />
+
+            <img
+              class="icbaseline-facebook-icon"
+              alt=""
+              src="{% static 'images/icbaselinetiktok.svg' %}"
+            />
+          </div>
+        </div>
+      </div>
+      <form class="get-in-touch3" method="post">
+        <div class="container-field1">
+          <div class="text-field-group">
+            <div class="text-field6">
+              <div class="boldlocation-parent">
+                <div class="label-palceholder6">First Name</div>
+                <div class="optional6">(Optional)</div>
+              </div>
+              <input
+                class="placeholder9"
+                type="text"
+                maxlength="{50}"
+                minlength="{2}"
+                required
+              />
+
+              <div class="helper-text12">
+                <img
+                  class="boldinfo-circle-icon6"
+                  alt=""
+                  src="./public/boldinfo-circle1.svg"
+                />
+
+                <div class="helper-text13">Helper text</div>
+              </div>
+            </div>
+            <div class="text-field6">
+              <div class="boldlocation-parent">
+                <div class="label-palceholder6">Last Name</div>
+                <div class="optional6">(Optional)</div>
+              </div>
+              <input
+                class="placeholder9"
+                type="text"
+                maxlength="{50}"
+                minlength="{2}"
+                required
+              />
+
+              <div class="helper-text12">
+                <img
+                  class="boldinfo-circle-icon6"
+                  alt=""
+                  src="./public/boldinfo-circle2.svg"
+                />
+
+                <div class="helper-text13">Helper text</div>
+              </div>
+            </div>
+          </div>
+          <div class="text-field8">
+            <div class="boldlocation-parent">
+              <div class="label-palceholder6">Email</div>
+              <div class="optional6">(Optional)</div>
+            </div>
+            <input
+              class="placeholder9"
+              type="email"
+              maxlength="{50}"
+              minlength="{9}"
+              required
+            />
+
+            <div class="helper-text12">
+              <img
+                class="boldinfo-circle-icon6"
+                alt=""
+                src="./public/boldinfo-circle3.svg"
+              />
+
+              <div class="helper-text13">Helper text</div>
+            </div>
+          </div>
+          <div class="text-field8">
+            <div class="boldlocation-parent">
+              <div class="label-palceholder6">What can we do for you</div>
+              <div class="optional6">(Optional)</div>
+            </div>
+            <div class="placeholder12">
+              <div class="placeholder-place1">
+                <img
+                  class="arrow-left-icon7"
+                  alt=""
+                  src="./public/lightsearch1.svg"
+                />
+
+                <div class="placeholder13">
+                  <div class="placeholder14">Choose</div>
+                </div>
+                <img
+                  class="arrow-caret-down-md2"
+                  alt=""
+                  src="./public/arrow--caret-down-md.svg"
+                />
+              </div>
+            </div>
+            <div class="helper-text12">
+              <img
+                class="boldinfo-circle-icon6"
+                alt=""
+                src="./public/boldinfo-circle3.svg"
+              />
+
+              <div class="helper-text13">Helper text</div>
+            </div>
+          </div>
+          <div class="text-field8">
+            <div class="boldlocation-parent">
+              <div class="label-palceholder6">Phone Number</div>
+              <div class="optional6">(Optional)</div>
+            </div>
+            <div class="placeholder15">
+              <button class="country-code1">
+                <img class="flags-icon1" alt="" src="./public/flags.svg" />
+
+                <div class="code1">
+                  <div class="div3">+977</div>
+                </div>
+                <img
+                  class="boldarrow-down-icon21"
+                  alt=""
+                  src="./public/boldarrowdown4.svg"
+                />
+              </button>
+              <div class="placeholder14"></div>
+              <img
+                class="arrow-caret-down-md3"
+                alt=""
+                src="./public/arrow--caret-down-md.svg"
+              />
+            </div>
+            <div class="helper-text12">
+              <img
+                class="boldinfo-circle-icon6"
+                alt=""
+                src="./public/boldinfo-circle3.svg"
+              />
+
+              <div class="helper-text13">Helper text</div>
+            </div>
+          </div>
+          <div class="text-field11">
+            <div class="boldlocation-parent">
+              <div class="label-palceholder6">Message</div>
+              <div class="optional6">(Optional)</div>
+            </div>
+            <textarea class="placeholder17"> </textarea>
+            <div class="helper-text12">
+              <img
+                class="boldinfo-circle-icon6"
+                alt=""
+                src="./public/boldinfo-circle4.svg"
+              />
+
+              <div class="helper-text13">Helper text</div>
+            </div>
+          </div>
+        </div>
+        <button class="button15" type="submit">
+          <img
+            class="arrow-left-icon7"
+            alt=""
+            src="./public/arrowleft7.svg"
+          />
+
+          <div class="large-button7">Send Message</div>
+          <img
+            class="arrow-left-icon7"
+            alt=""
+            src="./public/outlinearrowright5.svg"
+          />
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="map-wrapper">
+    <iframe class="map4"> </iframe>
+  </div>      
+{% endblock %}
+

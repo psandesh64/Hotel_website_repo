@@ -1,0 +1,483 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% block content %}
+  <div class="mybox ttp">
+    <div class="content19">
+      <div class="content20">
+        <div class="restaurant">RESTAURANT</div>
+        <div class="group-parent">
+          <img class="frame-child110" alt="" src="{% static 'images/group-1.svg' %}" />
+
+          <div class="frame-parent6">
+            <div class="the-parent">
+              <b class="the">The</b>
+              <b class="one">#One</b>
+            </div>
+            <b class="the">
+              <span>Momo </span>
+              <span class="love-us">Restaurant</span>
+            </b>
+          </div>
+        </div>
+        <div class="more-than-parent">
+          <div class="more-than">More than</div>
+          <b class="varieties">20+ Varieties</b>
+          <div class="more-than">of momo available for you</div>
+        </div>
+      </div>
+      <button class="button10">
+        <img class="arrow-left-icon7" alt="" src="" />
+
+        <div class="large-button7">Explore Food Menu</div>
+        <img
+          class="boldcall-icon"
+          alt=""
+          src="{% static 'images/outlinearrowright.svg' %}"
+        />
+      </button>
+    </div>
+    <div class="mybox_child">
+      <div class="home-child"></div>
+      <div class="home-item">
+        <img class="myimg" alt="" src="{% static 'images/homepage_momo.png' %}" />
+      </div>
+    </div>
+  </div>
+  <div class="about-us27">
+    <img class="about-us-child" alt="" src="{% static 'images/frame-3@2x.png' %}" />
+
+    <div class="about-us28">
+      <div class="heading13">
+        <b class="the">
+          <span>Why Customers </span>
+          <span class="love-us">Love Us</span>
+        </b>
+      </div>
+      <p class="lorem-ipsum-dolor11">
+        Lorem ipsum dolor sit amet consectetur. Sed diam dolor vivamus nibh
+        fermentum vulputate tortor. Egestas facilisi luctus turpis arcu
+        dignissim. Amet neque enim etiam purus id. Tortor sit orci blandit
+        cursus turpis.
+      </p>
+      <button class="button10">
+        <img
+          class="arrow-left-icon7"
+          alt=""
+          src=""
+        />
+
+        <div class="large-button7">Explore Our Story</div>
+        <img
+          class="boldcall-icon"
+          alt=""
+          src="{% static 'images/outlinearrowright.svg' %}"
+        />
+      </button>
+    </div>  
+  </div>
+  <div class="our-recepies">
+    <div class="our-most-popular-recipes-parent">
+      <b class="the">
+        <span>Our </span>
+        <span class="love-us">Most Popular</span>
+        <span> Recipes</span>
+      </b>
+      <div class="browse-through-a">
+        Browse through a varieties of recipes with fresh ingredients
+        selected only from the best places
+      </div>
+    </div>
+    <div class="frame-parent7">
+      {% for category in categories %}
+      <button class="buff-wrapper" onclick="showCategory('{{category.name}}')">
+        <div class="buff">{{ category.name }}</div>
+      </button>
+      {% endfor %}
+    </div>
+    <div class="arrow-group">
+      <button class="arrow4" onclick="goPrev0()">
+        <img
+          class="arrow-arrow-right-md2"
+          alt=""
+          src="{% static 'images/arrow--arrow-right-md.svg' %}"
+        />
+      </button>
+      
+      {% for category in categories %}
+      <div id="{{ category.name }}Items" class="category-items" style="display: none;">
+        <div class="menu-parent">
+          
+          {% for food_item in category.categori.all %}
+          
+          <div class="slide0">
+
+            <div class="menu">
+
+              <img
+                class="steam-momo-icon"
+                alt=""
+                src="{{ food_item.food_image.url }} "
+              />
+              
+              <div class="content21">
+                <b class="buff-fry-momo">{{ food_item.name }}</b>
+                <div class="nepalese-rupee-parent6">
+                  <img
+                    class="arrow-arrow-right-md2"
+                    alt=""
+                    src="{% static 'images/nepalese-rupee.svg' %}"
+                  />
+
+                  <b class="the">{{ food_item.price }}</b>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          {% endfor %}
+
+        </div>
+      </div>
+      {% endfor %}
+    
+      <button class="arrow4" onclick="goNext0()">
+        <img
+          class="arrow-arrow-right-md2"
+          alt=""
+          src="{% static 'images/arrow--arrow-left-md.svg' %}"
+        />
+      </button>
+    </div>
+    <a style="text-decoration: none;" href="{% url 'our-menu' %}">
+      <button class="button10">
+        <img class="arrow-left-icon7" alt="" src="" />
+
+        <div class="large-button7">Explore Our Menu</div>
+        <img
+          class="boldcall-icon"
+          alt=""
+          src="{% static 'images/outlinearrowright.svg' %}"
+        />
+      </button>
+    </a>
+  </div>
+
+  <div class="our-services3">
+    <div class="heading14">
+      <b class="the">
+        <span>We Offer People</span>
+        <span class="the-service-they"> The Service They Want</span>
+      </b>
+    </div>
+    <div class="video1">
+      <img class="quote-child" alt="" src="{% static 'images/home-videobg.png' %}" />
+      
+      <div class="video-container">
+        <div class="shadow1">
+        </div>
+        {% video videos.video 'large' %}
+      </div>
+      <div class="hcontent15">
+        <b class="hprocess-behind-the">Process behind the making</b>
+        <div class="hsee-how-we">
+          See how only chefs cooks only the best momos
+        </div>
+      </div>
+      <button class="hbutton7" onclick="playVideo()">
+        <img
+          class="boldplay-circle-icon1"
+          alt=""
+          src="{% static 'images/boldplaycircle.svg' %}"
+        />
+  
+        <div class="watch-the-video1">Watch the Video</div>
+
+      </button>
+    </div>
+
+    <div class="our-services4">
+      <div class="services-container">
+        <div class="service">
+          <img class="quality-icon" alt="" src="{% static 'images/quality.svg' %}" />
+
+          <b class="the">Quality Food</b>
+          <div class="only-the-best">
+            Only the best food with top quality products and ingredients
+          </div>
+        </div>
+        <div class="service">
+          <img class="quality-icon" alt="" src="{% static 'images/party.svg' %}" />
+
+          <b class="the">Private Party</b>
+          <div class="only-the-best">
+            Get the best food for all your private parties and gatherings
+          </div>
+        </div>
+        <div class="service">
+          <img class="quality-icon" alt="" src="{% static 'images/chef.svg' %}" />
+
+          <b class="the">Categring</b>
+          <div class="only-the-best">
+            Get the best food for any occasions and gatherings
+          </div>
+        </div>
+      </div>
+      <button class="button10">
+
+        <div class="large-button7">Explore Our Services</div>
+        <img
+          class="boldcall-icon"
+          alt=""
+          src="{% static 'images/outlinearrowright.svg' %}"
+        />
+      </button>
+    </div>
+  </div>
+
+  <div class="sliderdiv">
+    {% for customer in customers %}
+    <div class="slide">
+      <div class="testimonials">
+        <div class="heading-group">
+          <div class="heading15">
+            <b class="the">
+              <span>200+ </span>
+              <span class="love-us">Happy Customers</span>
+            </b>
+            <b class="what-our-customers">What our customers say about us</b>
+          </div>
+          <div class="quote3">
+            <i class="only-the-best3"
+              >{{ customer.comment }}</i
+            >
+            <b class="livia-dias">{{ customer.name }}</b>
+          </div>
+        </div>
+
+        <img
+          class="testimonials-child"
+          alt=""
+          src="{{ customer.customer_image.url }}"
+        />
+      </div>
+    </div>
+    {% endfor %}
+    <div class="button14" id="button_14">
+      <button class="arrow6" onclick="goPrev()">
+        <img
+          class="arrow-arrow-right-md2"
+          alt=""
+          src="{% static 'images/arrow--arrow-right-md.svg' %}"
+        />
+      </button>
+      <button class="arrow6" onclick="goNext()">
+        <img
+          class="arrow-arrow-right-md2"
+          alt=""
+          src="{% static 'images/arrow--arrow-left-md.svg' %}"
+        />
+      </button>
+    </div>
+  </div>
+
+  <div class="heading-container">
+    <div class="heading16">
+      <b class="the">
+        <span>Get </span>
+        <span class="love-us">In Touch</span>
+      </b>
+      <b class="what-our-customers"
+        >Our Friendly team would love to hear from you</b
+      >
+    </div>
+    <div class="frame-parent8">
+      <div class="frame-parent9">
+        <div class="frame-parent10">
+          <div class="boldlocation-parent">
+            <img
+              class="boldcall-icon"
+              alt=""
+              src="{% static 'images/boldlocation.svg' %}"
+            />
+
+            <div class="more-than">Our Address</div>
+          </div>
+          <i class="new-baneshwor-kathmandu1"
+            >New Baneshwor, Kathmandu, Bagmati, Nepal</i
+          >
+        </div>
+        <div class="frame-parent11">
+          <div class="boldlocation-parent">
+            <img class="boldcall-icon" alt="" src="{% static 'images/boldcall.svg' %}" />
+
+            <div class="more-than">Our Contacts</div>
+          </div>
+          <div class="frame-parent12">
+            <div class="mobile-group">
+              <div class="mobile1">Mobile</div>
+              <i class="i3">980 5689789</i>
+              <i class="i3">9841 275897</i>
+            </div>
+            <div class="landline-parent">
+              <div class="more-than">Landline</div>
+              <i class="i5">01-4783972</i>
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent13">
+          <div class="boldlocation-parent">
+            <img
+              class="boldcall-icon"
+              alt=""
+              src="{% static 'images/boldclock.svg' %}"
+            />
+
+            <div class="more-than">Our Service Time</div>
+          </div>
+          <div class="frame-parent14">
+            <div class="mobile-group">
+              <div class="more-than">MON - FRI</div>
+              <i class="i5">10 am - 8 pm</i>
+            </div>
+            <div class="mobile-group">
+              <div class="more-than">SAT - SUN</div>
+              <i class="i5">Closed</i>
+            </div>
+          </div>
+        </div>
+        <div class="get-in-touch-in-social-network-parent">
+          <i class="i3">Get in touch in social networks</i>
+          <div class="button14">
+            <img
+              class="icbaseline-facebook-icon"
+              alt=""
+              src="{% static 'images/icbaselinefacebook.svg' %}"
+            />
+
+            <img
+              class="icbaseline-facebook-icon"
+              alt=""
+              src="{% static 'images/phinstagramlogofill.svg' %}"
+            />
+
+            <img
+              class="icbaseline-facebook-icon"
+              alt=""
+              src="{% static 'images/icbaselinetiktok.svg' %}"
+            />
+          </div>
+        </div>
+      </div>
+      <form class="get-in-touch3" method="post" action="get-in-touch/">
+        {% csrf_token %}
+        <div class="container-field1">
+          <div class="text-field-group">
+            <div class="text-field6">
+              <div class="boldlocation-parent">
+                <div class="label-palceholder6">First Name</div>
+              </div>
+              <input
+                class="placeholder9"
+                type="text"
+                name="first_name"
+                maxlength=50
+                minlength=2
+                required
+              />
+            </div>
+
+            <div class="text-field6">
+              <div class="boldlocation-parent">
+                <div class="label-palceholder6">Last Name</div>
+              </div>
+              <input
+                class="placeholder9"
+                type="text"
+                name="last_name"
+                maxlength=50
+                minlength=2
+                required
+              />
+
+            </div>
+          </div>
+          <div class="text-field8">
+            <div class="boldlocation-parent">
+              <div class="label-palceholder6">Email</div>
+            </div>
+            <input
+              class="placeholder9"
+              type="email"
+              name="email"
+              maxlength=50
+              minlength=9
+              required
+            />
+
+          </div>
+          <div class="text-field8">
+            <div class="boldlocation-parent">
+              <div class="label-palceholder6">What can we do for you</div>
+            </div>
+            <div class="placeholder12">
+              
+              <select name="choose_option" class="placeholder13">
+                <option class="placeholder14" disabled selected>Choose</div>
+                <option value="Order Food">Order Food</option>
+                <option value="Technical Help">Technical Help</option>
+                <option value="Customer Complain">Customer Complain</option>
+                <option value="Customer Suggestion">Customer Suggestion</option>
+              </select>
+            
+            </div>
+
+          </div>
+          <div class="text-field8">
+            <div class="boldlocation-parent">
+              <div class="label-palceholder6">Phone Number</div>
+            </div>
+            <div class="placeholder15">
+              <select class="country-code1">
+                <option>
+                  <img class="flags-icon1" alt="" src="{% static 'images/flags.svg' %}" />
+
+                  <div class="code1">
+                    <div class="div3">+977</div>
+                  </div>
+                </option>
+              </select>
+              <input class="placeholder14" type="tel" name="phone" maxlength=10
+              minlength=10 required>
+            </div>
+        
+          </div>
+          <div class="text-field11">
+            <div class="boldlocation-parent">
+              <div class="label-palceholder6">Message</div>
+            </div>
+            <textarea name="text_area" class="placeholder17"></textarea>
+          </div>
+        </div>
+        <button class="button15" type="submit">
+          <div class="large-button7">Send Message</div> 
+        </button>
+      </form>
+      
+    </div>
+  </div>
+  <div class="map-wrapper">
+    <!-- <iframe class="map4"> </iframe> -->
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyBpOQyuVy5hrSaVveYwDwWfF7ZdzS_cUyA", v: "beta"});</script>
+        
+  </div>
+  <script src="{% static 'js/index.js' %}"></script>
+  <script src="{% static 'js/resp.js' %}"></script>
+{% endblock %}

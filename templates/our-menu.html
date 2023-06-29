@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="our-menu">
+
+    <div class="heading2 ttpp">
+      <div class="our-menu1">Our Menu</div>
+      <b class="our-menu-is-container">
+        <p class="our-menu-is">Our menu is more than just momos,</p>
+        <p class="with-a-variety">
+          with a variety of dishes to cater to all tastes and preferences.
+        </p>
+      </b>
+      <div class="qr-code1">
+        <div class="content2">
+          <b class="buff-momos">Scan the QR code</b>
+          <div class="you-can-also1">
+            You can also check the allergy advices using your phone as well
+          </div>
+        </div>
+        <div class="sacn1">
+          <div class="scan2">
+            <img class="scan-item" alt="" src="{% static 'images/qr1.png' %}" />
+          </div>
+          <div class="text2">
+            <b class="buff-momos">SCAN</b>
+            <b class="me1">ME!</b>
+            <img class="mobile-icon1" alt="" src="{% static 'images/mobile.svg' %}" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text3"></div>
+
+    {% for category in categories %}
+    <div class="momo-menu2">
+      <div class="heading3">
+        <img class="brushes-icon4" alt="" src="{% static 'images/leftbrushes.svg' %}" />
+
+        <div class="buff-momos">
+          <span>{{ category.name|upper }} </span>
+          <span class="momos">MOMO’s</span>
+        </div>
+        <img class="brushes-icon4" alt="" src="{% static 'images/rightbrushes.svg' %}" />
+      </div>
+      <div class="food-item">
+        <div class="item">
+          {% for food_item in category.categori.all %}
+          <div class="momo-menu3">
+            <div class="steam-momo">
+              <img
+                class="pngwing-2-icon"
+                alt=""
+                src="{{ food_item.food_image.url }}"
+              />
+            </div>
+            <div class="content3">
+              <div class="buff-c-momo-parent">
+                <b class="buff-c-momo">{{ food_item.name }}</b>
+                <div class="nepalese-rupee-parent">
+                  <img
+                    class="nepalese-rupee-icon"
+                    alt=""
+                    src="{% static 'images/nepalese-rupee.svg' %}"
+                  />
+
+                  <b class="buff-momos">{{ food_item.price }}</b>
+                </div>
+              </div>
+              <div class="freshly-steamed-buff">
+                (Freshly Steamed Buff Momos made from whole wheat and kneaded
+                with beta Carotene Rich Vegetable Juice)
+              </div>
+            </div>
+            <div class="status" id="status">
+              <div class="new">New</div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+  <script src="{% static 'js/resp.js' %}"></script>
+{% endblock %}

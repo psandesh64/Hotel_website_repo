@@ -1,0 +1,859 @@
+.about-us18{
+  background-color: #fff;
+  text-align: left;
+  font-family: "Proxima Nova";
+  width: 100%;
+  overflow: hidden;
+  font-size: 49px;
+  color: #fff;
+}
+.about-us-parent {
+  margin-top: 120px;
+  width: 100%;
+  font-size: 64px;
+  color: #0c6967;
+  font-family: Allura;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us19 {
+  line-height: 120%;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  font-size: 20px;
+  color: #6b788e;
+  font-family: "Proxima Nova";
+}
+.about1{
+  padding: 156px 80px 0px 80px;
+  width: 40%;
+  align-items: stretch;
+}
+.frame-parent4 {
+  width: 60%;
+  width: 700px;
+  position: relative;
+}
+.frame-icon {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 200px;
+  z-index: -1;
+}
+.group-child1 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  bottom: 0px;
+  right: 50px;
+  z-index: -1;
+}
+.group-child2 {
+  top: 0;
+  width: 600px;
+}
+.we-pride-ourself {
+  position: relative;
+  letter-spacing: 0.12em;
+  font-weight: 300;
+}
+.passed-down-through {
+  color: #101828;
+}
+.our-authentic-momo-container {
+  align-self: stretch;
+  position: relative;
+  font-size: 39px;
+  line-height: 120%;
+  color: #d95103;
+}
+
+.shadow1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    #000 11.69%,
+    rgba(0, 0, 0, 0.9) 29.01%,
+    rgba(0, 0, 0, 0.7) 47.41%,
+    transparent
+  );
+  opacity: 0.8;
+}
+.process-behind-the,
+.see-how-we {
+  position: relative;
+  line-height: 120%;
+}
+.see-how-we {
+  font-size: 25px;
+}
+.content15 {
+  position: absolute;
+  bottom: 176px;
+  left: 156px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.boldplay-circle-icon1 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.watch-the-video1 {
+  position: relative;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: center;
+}
+.outlinearrow-right-icon3 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.button7 {
+  cursor: pointer;
+  border: 0;
+  padding: 16px 32px 16px 24px;
+  background-color: #0c6967;
+  position: absolute;
+  bottom: 64px;
+  left: 156px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.video1 {
+  position: relative;
+  top:50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.made-with-love {
+  color: #d95103;
+}
+.our-momos-are-container {
+  align-self: stretch;
+  position: relative;
+  line-height: 120%;
+}
+.heading9 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.lorem-ipsum-dolor7 {
+  align-self: stretch;
+  position: relative;
+  font-size: 20px;
+  line-height: 160%;
+  color: #6b788e;
+}
+.about-us20 {
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  z-index: 0;
+}
+.about-child {
+  position: relative;
+  border-radius: 4px;
+  width: 552px;
+  height: 448px;
+  object-fit: cover;
+  z-index: 1;
+}
+.pngwing-2-icon4 {
+  position: absolute;
+  margin: 0 !important;
+  bottom: -41px;
+  left: calc(50% - 155px);
+  width: 264px;
+  height: 191px;
+  object-fit: cover;
+  z-index: 2;
+}
+.about3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: 120px;
+}
+.about-item {
+  position: relative;
+  border-radius: 4px;
+  width: 552px;
+  height: 448px;
+  object-fit: cover;
+  z-index: 0;
+}
+.about-us21 {
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  z-index: 1;
+}
+.pngegg-1-icon2,
+.vbss64ar4ftv20rdkigdgqdt6f-1-icon {
+  position: absolute;
+  margin: 0 !important;
+  object-fit: cover;
+  z-index: 2;
+}
+.pngegg-1-icon2 {
+  top: calc(50% + 106px);
+  left: calc(50% - 166px);
+  width: 263px;
+  height: 170px;
+}
+.vbss64ar4ftv20rdkigdgqdt6f-1-icon {
+  bottom: -81px;
+  left: calc(50% - 178px);
+  width: 358px;
+  height: 238px;
+}
+.about2 {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10vw 0vw;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12vw;
+  font-size: 39px;
+  color: #101828;
+}
+.quote-child {
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
+}
+.quote-child,
+.quote-item {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.quote-item {
+  width: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(26px);
+}
+
+.arrow-arrow-right-md {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.arrow,
+.button8 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.arrow {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  background-color: transparent;
+  border-radius: 100px;
+  align-items: flex-start;
+}
+.button8 {
+  position: absolute;
+  left: 500px;
+  bottom: 120px;
+  align-items: center;
+  gap: 16px;
+}
+.quote-icon {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.momo-is-not {
+  align-self: stretch;
+  position: relative;
+  line-height: 160%;
+}
+.quote2 {
+  margin-top: 80px;
+  align-self: stretch;
+  gap: 34px;
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Proxima Nova";
+}
+.marcus-schleifer-parent,
+.quote2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.quote {
+  position: relative;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: 39px;
+  display: flex;
+  flex-direction: column;
+}
+.quote-inner {
+  height: 650px;
+  width: 40%;
+  z-index: 1;
+  right: 0;
+  object-fit: cover;
+}
+.quote1 {
+  position: relative;
+  margin-left: 10vw;
+  margin-right: 9.75vw;
+  margin-bottom: 100px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 64px;
+}
+.myhello{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.sliderdiv1{
+  justify-content: center;
+  width:100%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+.slide1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+}
+.our-talented-team {
+  position: relative;
+  font-size: 25px;
+  line-height: 120%;
+  color: #0c6967;
+}
+.heading12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.shadow2 {
+  position: absolute;
+  height: calc(100% - 256px);
+  width: 100%;
+  top: 256px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, transparent, #000);
+}
+.head-chef {
+  position: relative;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  width: 312px;
+}
+.our-momos-are {
+  align-self: stretch;
+  position: relative;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: Inter;
+  display: none;
+}
+.icon3,
+.text4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.text4 {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 8px;
+}
+.icon3 {
+  border-radius: 100px;
+  border: 1px solid #fff;
+  flex-direction: row;
+  padding: 8px;
+}
+.icbaseline-tiktok-icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.content16,
+.social {
+  justify-content: flex-start;
+}
+.social {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.content16 {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 24px;
+}
+.our-team {
+  position: relative;
+  border-radius: 4px;
+  width: 360px;
+  height: 512px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.chef {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  font-size: 31px;
+  color: #fff;
+  width: 1128px;
+  overflow: hidden;
+}
+.slide2{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  display: flex;
+  gap: 24px;
+}
+.b8,
+.div1,
+.div2 {
+  position: relative;
+  line-height: 120%;
+}
+.b8 {
+  font-size: 31px;
+}
+.div1,
+.div2 {
+  color: #6b788e;
+}
+.div2 {
+  color: #c2c7d0;
+}
+.group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.arrow-parent,
+.arrow2,
+.group {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.arrow2 {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: transparent;
+  border-radius: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.arrow-parent {
+  gap: 16px;
+}
+.arrow-parent,
+.frame-parent5,
+.out-team {
+  display: flex;
+  align-items: center;
+}
+.frame-parent5 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #000;
+}
+.out-team {
+  left: 0;
+  flex-direction: column;
+  padding: 80px 156px;
+  justify-content: flex-start;
+  gap: 40px;
+  color: #101828;
+}
+.momo-1-icon8 {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logo21 {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+.lorem-ipsum-dolor10 {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 180%;
+  font-family: Inter;
+  color: #6b788e;
+}
+.link40,
+.link41,
+.links12,
+.logo20 {
+  display: flex;
+  justify-content: flex-start;
+}
+.logo20 {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 16px 16px 0;
+  align-items: flex-start;
+  gap: 12px;
+}
+.link40,
+.link41,
+.links12 {
+  flex-direction: row;
+  align-items: center;
+}
+.link40,
+.links12 {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.links12 {
+  align-self: stretch;
+  gap: 12px;
+  font-size: 16px;
+  color: #252d43;
+  font-family: Inter;
+}
+.link40 {
+  width: 168px;
+  gap: 16px;
+}
+.path16-icon8 {
+  position: absolute;
+  height: 58.33%;
+  width: 29.17%;
+  top: 20.83%;
+  right: 35.42%;
+  bottom: 20.83%;
+  left: 35.42%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.social-icon36 {
+  text-decoration: none;
+  position: relative;
+  border-radius: 100px;
+  background-color: #a6aebb;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.twitter-svg4,
+.vector-icon14 {
+  position: absolute;
+  height: 47.92%;
+  width: 50%;
+  top: 27.08%;
+  right: 25%;
+  bottom: 25%;
+  left: 25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.twitter-svg4 {
+  height: 41.67%;
+  top: 29.17%;
+  bottom: 29.17%;
+}
+.social-icon-parent6 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.instagram-svg-icon8,
+.vector-icon15,
+.youtube-svg-icon4 {
+  position: absolute;
+  height: 37.5%;
+  width: 54.17%;
+  top: 31.25%;
+  right: 22.92%;
+  bottom: 31.25%;
+  left: 22.92%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.instagram-svg-icon8,
+.vector-icon15 {
+  height: 52.08%;
+  width: 50%;
+  top: 25%;
+  right: 25%;
+  bottom: 22.92%;
+  left: 25%;
+}
+.vector-icon15 {
+  height: 58.33%;
+  top: 20.83%;
+  bottom: 20.83%;
+}
+.footer-section4,
+.links-part4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.links-part4 {
+  gap: 48px;
+  font-size: 25px;
+}
+.footer-section4 {
+  align-self: stretch;
+  gap: 120px;
+}
+.footer-child1 {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.copyright-2023-everest4 {
+  position: relative;
+  font-size: 16px;
+  line-height: 120%;
+  font-family: Inter;
+  color: #6b788e;
+}
+.footer8,
+.footer9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer9 {
+  align-self: stretch;
+  background-color: #fafbfb;
+  overflow: hidden;
+  padding: 56px 156px;
+  align-items: center;
+  gap: 40px;
+}
+.footer8 {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #c2c7d0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 31px;
+  color: #0c6967;
+  font-family: "Proxima Nova";
+}
+.momo-1-icon9 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logo23 {
+  text-decoration: none;
+  align-self: stretch;
+  width: 168px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  color: inherit;
+}
+.about-us23 {
+  position: relative;
+  line-height: 120%;
+  font-weight: 600;
+}
+.boldarrow-down-icon17 {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  display: none;
+}
+.item-link16 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 12px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+  color: #0c6967;
+}
+.about-us24 {
+  position: relative;
+  line-height: 120%;
+  font-weight: 500;
+}
+.item-link17,
+.links14 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link17 {
+  text-decoration: none;
+  padding: 8px 12px;
+  gap: 2px;
+  color: inherit;
+}
+.links14 {
+  align-self: stretch;
+  flex: 1;
+  gap: 8px;
+  font-size: 14px;
+  color: #6b788e;
+  font-family: Inter;
+}
+.social-icon42 {
+  text-decoration: none;
+  position: relative;
+  border-radius: 100px;
+  background-color: #a6aebb;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.large-button6 {
+  position: relative;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: center;
+}
+.button9,
+.buttons5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button9 {
+  cursor: pointer;
+  border: 0;
+  padding: 12px 22px;
+  background-color: #d95103;
+  border-radius: 100px;
+  justify-content: center;
+  gap: 8px;
+}
+.buttons5 {
+  align-self: stretch;
+  width: 360px;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
